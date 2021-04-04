@@ -1,0 +1,99 @@
+.sauce-main
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9)
+{
+    .sauce-main
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .sauce-main
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+.header
+{   
+    height: 100vh
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.bigballs
+{
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    color: #00000a;
+    top: 200px;
+}
+.bigballs h1
+{
+    font-size: 55px;
+    font-weight: inherit;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+.bigballs h2
+{
+    font-size: 30px;
+    font-weight: inherit;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+.h
+{
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+    padding: 14px 30px;
+    text-decoration: none;
+    border: 1px solid cyan;
+    border-radius: 15px;
+}
+.button-disc:hover
+{
+    background: cyan;
+    transition: .5s;
+    text-indent: 50px;
+}
+.button-roblox:hover
+{
+    background: cyan;
+    transition: .5s;
+    text-indent: 50px;
+}
+.button-tiktok:hover
+{
+    background: cyan;
+    transition: .5s;
+    text-indent: 50px;
+}
+.button-api:hover
+{
+    background: cyan;
+    transition: .5s;
+    text-indent: 50px;
+}
+.button-docs:hover
+{
+    background: cyan;
+    transition: .5s;
+    text-indent: 50px;
+}

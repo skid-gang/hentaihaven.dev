@@ -1,0 +1,1 @@
+this was removed for nsfw so i dont get banned on github. the api calls from this folder to grab an image randomly selected.

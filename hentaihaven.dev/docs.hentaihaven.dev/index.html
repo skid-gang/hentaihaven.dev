@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>api.hentaihaven.dev/ documentation</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <meta name="og:image" content="http://www.asciify.net/ascii/thumb/12540/ahegao-face.png" />
+        <meta property="og:title" content="https://api.hentaihaven.dev/ documentation" />
+        <meta property="og:description" content="documentation for my hentai api. basic python examples, and discord.py examples" />
+        <meta name="theme-color" content="#ff5a1d" />
+        <a href="https://api.hentaihaven.dev/">API</a>
+        <a href="https://discord.gg/a39KkE6gPm">Support Discord Server</a>
+        <h1>hentaihaven.dev API documentation</h1>
+        <p>This is meant to be used in Python. If you are using this for Python you need to import requests and random. Why do you need random? Random choices a random number between how many images my API has. For now it's only 22. </p>
+        <h1>Example in Python:</h1>
+        <p>
+            <code><BR>import requests</BR>
+                <BR>import random</BR>
+                <BR>var = random.randint(1,22)</BR>
+                <BR>r = requests.get(f"https://api.hentaihaven.dev/api.json")</BR>
+                <BR>j = r.json()</BR>
+                <BR>print(j[f"{var}"])</BR>
+            </code>
+        </p>
+        <h1>Example in the library discord.py in Python:</h1>
+            <p>
+                <code>
+                    <br>import requests</br>
+                    <br>import random</br>
+                    <br>import discord</br>
+                    <br>from discord.ext import commands</br>
+                    <br>client = commands.Bot(command_prefix="?")</br>
+                    <br>@client.command()</br>
+                    <br>async def commandnamehere(ctx):</br>
+                    <br>sauce = random.randint(1,22)</br>
+                    <br>r = requests.get(f"https://api.hentaihaven.dev/api.json")</br>
+                    <br>j = r.json()</br>
+                    <br>embed = discord.Embed(description="Sauce provided by https://api.hentaihaven.dev/")</br>
+                    <br>embed.set_image(url=j[f"{sauce}"])</br>
+                    <br>await ctx.send(embed=embed)</br>
+                    <br>client.run("tokenhere")</br>
+                </code>
+            </p>
+        </h1>
+    </body>
+</html>
